@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The styles -->
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+
+    <link href="css/ui.css" rel="stylesheet">
+    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='css/jquery.noty.css' rel='stylesheet'>
+    <link href='css/noty_theme_default.css' rel='stylesheet'>
+    <link href='css/elfinder.min.css' rel='stylesheet'>
+    <link href='css/elfinder.theme.css' rel='stylesheet'>
+    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='css/uploadify.css' rel='stylesheet'>
+    <link href='css/animate.min.css' rel='stylesheet'>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- The fav icon -->
+
+</head>
+
+<body>
+    <!-- topbar starts -->
+    <div class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img alt="" class="hidden-xs"/>
+                <span>Title</span></a>
+
+                <!-- user dropdown starts -->
+                <div class="btn-group pull-right">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> Admin</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                     <span>
+                    <button type="button" class="btn btn-default"><a href="login.html"><i class="glyphicon glyphicon-log-in"></i><span class="hidden-sm hidden-xs"> Login</span></a></button>
+                </span>
+                </div>
+                <!-- user dropdown ends -->
+
+          
+                <ul class="collapse navbar-collapse nav navbar-nav top-menu">
+                    <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Visit Site</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-folder-close"></i> Manage <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Activity</a></li>
+                                <li><a href="#">User subscription plan</a></li>
+                                <li><a href="#">User role and permission</a></li>
+                                <li><a href="#">Live session</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Amount</a></li>
+                                <li><a href="#">Wallet</a></li>
+                            </ul>                        </li>
+                        <li>
+                            <form class="navbar-search pull-left">
+                                <input placeholder="Search" class="search-query form-control col-md-10" name="query"
+                                type="text">
+                            </form>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- topbar ends -->
+            <div class="ch-container">
+                <div class="row">
+
+                    <!-- left menu starts -->
+                    <div class="col-sm-2 col-lg-2">
+                        <div class="sidebar-nav">
+                            <div class="nav-canvas">
+                                <div class="nav-sm nav nav-stacked">
+
+                                </div>
+                                <ul class="nav nav-pills nav-stacked main-menu">
+                                    <li class="nav-header">Main</li>
+                                    <li><a class="ajax-link" href="index.html"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
+                                    </li>
+                                        <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span> Charts</span></a>
+                                        </li>
+                                        <li><a class="ajax-link" href="table.html"><i
+                                            class="glyphicon glyphicon-align-justify"></i><span> Tables</span></a></li>
+                                            <li class="accordion">
+                                                <a href="#"><i class="glyphicon glyphicon-user icon-white"></i><span> User</span></a>
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li><a class="ajax-link" href="register.html"><i class="glyphicon glyphicon-list"></i> Register</a></li>
+                                                    <li><a href="edit.html"><i class="glyphicon glyphicon-pencil"></i> Edit</a></li> 
+                                                    <li><a href="#"><i class="glyphicon glyphicon-file"></i> Create Subscription Plan</a></li>
+                                                    <li><a href="delete.html"><i class="glyphicon glyphicon-trash"></i> Delete</a></li>
+                                                    <li><a href="ban.html"><i class="glyphicon glyphicon-ban-circle"></i> Ban</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="makeadmin.html"><i class="glyphicon glyphicon-certificate"></i> Make admin</a></li>                           </ul>
+                                                </li>
+                                                <li><a class="ajax-link" href="calendar.html"><i class="glyphicon glyphicon-calendar"></i><span> Calendar</span></a>
+                                                </li>
+                                                    </ul>
+                                                     <li class="accordion">
+                                                <a href="#"><i class="glyphicon glyphicon-eye-open"></i><span> User UI</span></a>
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li><a class="ajax-link" href="#"><i class="glyphicon glyphicon-picture"></i> Edit User Background</a></li>
+                                                    <li><a href="#"><i class="glyphicon glyphicon-list"></i> Edit User Menu</a></li> 
+                                                </ul>
+                                                </li>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <!-- left menu ends -->
+
+                                        <noscript>
+                                            <div class="alert alert-block col-md-12">
+                                                <h4 class="alert-heading">Warning!</h4>
+
+                                                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                                                enabled to use this site.</p>
+                                            </div>
+                                        </noscript>
+                                        <div id="content" class="col-lg-10 col-sm-10">
+                                <!-- content starts -->
+                                            <div>
+
+                                        <ul class="breadcrumb">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Edit User Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        <form class="form-horizontal" action='' method="POST">
+  <fieldset>
+    <div id="legend">
+      <legend class="">Edit User Details</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label"  for="username">Username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+      </div>
+    </div>   <div class="control-group">
+      <!-- New Username -->
+      <label class="control-label"  for="newusername">New Username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+        <p class="help-block">If change of username is not intended, you can use previous username</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">E-mail</label>
+      <div class="controls">
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+        <p class="help-block">Please provide your E-mail</p>
+      </div>
+    </div>
+      <div class="control-group">
+      <!--New E-mail -->
+      <label class="control-label" for="newemail">New E-mail</label>
+      <div class="controls">
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+        <p class="help-block">Please provide your E-mail</p>
+        <p class="help-block">If change of email is not intended, you can use previous email</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+        <p class="help-block">Password should be at least 4 characters</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- New Password -->
+      <label class="control-label"  for="newpassword">New Password</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="newconfirm" placeholder="" class="input-xlarge">
+        <p class="help-block">Password should be at least 4 characters</p>
+        <p class="help-block">If change of password is not intended, you can use previous password</p>
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">Confirm changes</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+    </div>  
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3>Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Here settings can be configured...</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer class="row">
+                                                                            <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="#" target="_blank"></a> Footer goes here</p>
+
+                                                                        </footer>
+
+</div><!--/.fluid-container-->
+
+<!-- external javascript -->
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- library for cookie management -->
+<script src="js/jquery.cookie.js"></script>
+<!-- calender plugin -->
+<script src='bower_components/moment/min/moment.min.js'></script>
+<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- data table plugin -->
+<script src='js/jquery.dataTables.min.js'></script>
+
+<!-- select or dropdown enhancer -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- plugin for gallery image view -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- notification plugin -->
+<script src="js/jquery.noty.js"></script>
+<!-- library for making tables responsive -->
+<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- tour plugin -->
+<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- star rating plugin -->
+<script src="js/jquery.raty.min.js"></script>
+<!-- for iOS style toggle switch -->
+<script src="js/jquery.iphone.toggle.js"></script>
+<!-- autogrowing textarea plugin -->
+<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- multiple file upload plugin -->
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- history.js for cross-browser state change on ajax -->
+<script src="js/jquery.history.js"></script>
+<!-- application script for ui demo -->
+<script src="js/ui.js"></script>
+
+
+</body>
+</html>
